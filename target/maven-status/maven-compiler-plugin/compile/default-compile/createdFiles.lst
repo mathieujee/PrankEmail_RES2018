@@ -1,0 +1,4 @@
+model\email\Email.class
+PrankEmail.class
+model\email\Person.class
+model\email\Group.class
