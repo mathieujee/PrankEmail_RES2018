@@ -10,7 +10,7 @@ import java.util.List;
 public interface IConfigurationManager {
 
     /**
-     * Creat a List with people on the file
+     * Create a List with people on the file
      *
      * @param filename the path to the file
      * @return a List of people
@@ -25,10 +25,10 @@ public interface IConfigurationManager {
     public List<Person> getVictims();
 
     /**
-     * Creat a List with people on the file
+     * Create a List with messages on the file
      *
      * @param filename the path to the file
-     * @return a List with people on the file
+     * @return a List with messages on the file
      * @throws IOException
      */
     public List<String> messages(String filename) throws IOException;
@@ -39,6 +39,10 @@ public interface IConfigurationManager {
      */
     public List<String> getMessages();
 
+    /**
+     * Return a List with witnessesCC
+     * @return a List with witnessesCC
+     */
     public List<Person> getwitnessesToCC();
 
     /**
