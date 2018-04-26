@@ -10,7 +10,7 @@ In order to avoid sending tons of emails trough public SMTP servers, we will use
 
 ### Setup a mock SMTP server (with Docker)
 
-####Docker Installation
+#### Docker Installation
 
 First of all you need to install Docker on your device. 
 
@@ -30,7 +30,7 @@ Docker is a platform to develop, deploy and run applications with virtual contai
 
 
 
-####Mock Server Installation
+#### Mock Server Installation
 
 Afterwards, you need to install the mock SMTP server. We will be using "MockMock".
 
@@ -40,7 +40,7 @@ https://github.com/tweakers-dev/MockMock
 
 
 
-####Setup Docker Image
+#### Setup Docker Image
 
 Now that these two tools are installed, we need to setup the Docker Image.
 
@@ -96,8 +96,8 @@ The configuration files are in the ressources directory
 `victims.utf8` contains a list of email address for the prank.
 
 `prankmails.utf8` contains some messages that will be send for the prank. To separat them, there are these symbol : `====`. 
- 
- 
+
+
 ### Implementation
 
 There are three main parts for the project :
