@@ -10,7 +10,7 @@ import java.util.List;
 public interface IConfigurationManager {
 
     /**
-     * Creat a List with on the file
+     * Creat a List with people on the file
      *
      * @param filename the path to the file
      * @return a List of people
