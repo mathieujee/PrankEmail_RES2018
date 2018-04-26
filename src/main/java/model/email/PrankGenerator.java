@@ -4,14 +4,25 @@ import config.ConfigurationManager;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Generate a Prank
+ */
 public class PrankGenerator {
 
     private ConfigurationManager configurationManager;
 
+    /**
+     * Creat a Prank with configuration Manager
+     * @param configurationManager
+     */
     public PrankGenerator(ConfigurationManager configurationManager) {
         this.configurationManager = configurationManager;
     }
 
+    /**
+     * Return a prank
+     * @return a prank
+     */
     public ArrayList<Prank> generatePranks() {
 
         ArrayList<Prank> prankBuild = new ArrayList<Prank>();
@@ -26,6 +37,7 @@ public class PrankGenerator {
 
         ArrayList<Person> wToCC = configurationManager.getwitnessesToCC();
 
+        // Check if there are at least 3 people for each group
         if (victims.size() / nbGroups < 3) {
             nbGroups = victims.size() / 3;
         }
