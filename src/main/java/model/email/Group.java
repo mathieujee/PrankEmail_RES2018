@@ -2,15 +2,26 @@ package model.email;
 
 import java.util.ArrayList;
 
+/**
+ * Group for prank
+ */
 public class Group {
 
     private ArrayList<Person> personList;
 
+    /**
+     * Creat a empty Group
+     */
     public Group(){
 
         personList = new ArrayList<Person>();
     }
 
+    /**
+     * Creat a group with some person
+     *
+     * @param persons
+     */
     public Group(Person... persons) {
 
         personList = new ArrayList<Person>();
@@ -20,6 +31,11 @@ public class Group {
         }
     }
 
+    /**
+     * Add person on the group
+     *
+     * @param persons
+     */
     public void add(Person... persons){
 
         for (Person person : persons) {
@@ -27,6 +43,11 @@ public class Group {
         }
     }
 
+    /**
+     * Return an ArrayList with person
+     *
+     * @return an ArrayList with person
+     */
     public ArrayList<Person> getPersonList() {
         return new ArrayList<Person>(personList);
     }
