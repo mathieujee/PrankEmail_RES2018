@@ -10,6 +10,9 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.util.ArrayList;
 
+/**
+ * SMTP Client
+ */
 public class SmtpClient implements ISmtpClient {
 
 
@@ -54,7 +57,7 @@ public class SmtpClient implements ISmtpClient {
                 writer.write(Protocol.CMD_MAIL_FROM + p.getSender().getEmail() + RETURN);
                 writer.flush();
                 reader.readLine();
-
+                
                 for(Person person : p.getVictims()){
                     writer.write(Protocol.CMD_RCPT_TO + person.getEmail() + RETURN);
                     writer.flush();
