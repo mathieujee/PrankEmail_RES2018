@@ -1,11 +1,15 @@
 package model.email;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Group {
 
-    private List<Person> personList;
+    private ArrayList<Person> personList;
+
+    public Group(){
+
+        personList = new ArrayList<Person>();
+    }
 
     public Group(Person... persons) {
 
@@ -16,11 +20,14 @@ public class Group {
         }
     }
 
-    public  Group(List<Person> personList) {
-        this.personList = new ArrayList<Person>(personList);
+    public void add(Person... persons){
+
+        for (Person person : persons) {
+            personList.add(person);
+        }
     }
 
-    public List<Person> getPersonList() {
+    public ArrayList<Person> getPersonList() {
         return new ArrayList<Person>(personList);
     }
 }
