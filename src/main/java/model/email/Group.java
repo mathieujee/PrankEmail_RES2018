@@ -18,7 +18,7 @@ public class Group {
     }
 
     /**
-     * Creat a group with some person
+     * Create a group with some persons
      *
      * @param persons
      */
@@ -32,7 +32,7 @@ public class Group {
     }
 
     /**
-     * Add person on the group
+     * Add one or several persons in the group
      *
      * @param persons
      */

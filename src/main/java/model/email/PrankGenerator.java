@@ -12,7 +12,7 @@ public class PrankGenerator {
     private ConfigurationManager configurationManager;
 
     /**
-     * Creat a Prank with configuration Manager
+     * Create a Prank with configuration Manager
      * @param configurationManager
      */
     public PrankGenerator(ConfigurationManager configurationManager) {

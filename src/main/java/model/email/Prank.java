@@ -13,12 +13,12 @@ public class Prank {
     private String message;
 
     /**
-     * Creat a Prank
+     * Create a Prank
      *
      * @param sender the person who will send email
-     * @param victims people who will be pranked
+     * @param victims people to be pranked
      * @param witnessesToCC
-     * @param message the send message
+     * @param message the sent message
      */
     public Prank(Person sender, ArrayList<Person> victims, ArrayList<Person> witnessesToCC, String message){
         this.sender = sender;

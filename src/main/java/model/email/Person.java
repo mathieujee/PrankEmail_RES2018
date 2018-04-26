@@ -10,7 +10,7 @@ public class Person {
     private String email;
 
     /**
-     * Creat a person
+     * Create a person
      * @param firstName
      * @param lastName
      * @param email
@@ -22,7 +22,7 @@ public class Person {
     }
 
     /**
-     * Creat a person with only email
+     * Create a person with only email
      * @param email
      */
     public Person(String email) {
