@@ -82,6 +82,30 @@ You have now access to your mock mailbox. Just use this short url with the ip of
 `http://ip-of-docker-container:8080`
 
 
+#### Configuration
 
+The configuration files are in the ressources directory
+
+`config.properties ` contains some configurations for the server and the project
+
+* Server address
+* Server Port
+* Number of groups
+* People to CC
+
+`victims.utf8` contains a list of email address for the prank.
+
+`prankmails.utf8` contains some messages that will be send for the prank. To separat them, there is this symbol : `====`. 
+ 
+ 
+#### Implementation
+
+There are three main parts for the project :
+
+* `Configuration manager Part :` This part contains the code for reading configuration files and tranform data in java object for the prank. 
+
+* `Prank part :` contains four classes, three of them are for the prank and the other one represent a person. The main class is PrankGenerator. It build a prank with objects from the configuration manager part.
+
+* `SMTP part :` contains the data for the SMTP protocol and the client. The client starts a connexion with the server and send all data for each prank.
 
 
