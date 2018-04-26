@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Manage the configuration for the prank with extern files.
+ * Manage the configuration for the prank with external files.
  */
 public interface IConfigurationManager {
 
     /**
-     * Create a List with people on the file
+     * Create a List with the people in the file
      *
-     * @param filename the path to the file
+     * @param filename file path
      * @return a List of people
      * @throws IOException
      */
@@ -25,9 +25,9 @@ public interface IConfigurationManager {
     public List<Person> getVictims();
 
     /**
-     * Create a List with messages on the file
+     * Create a List with messages in the file
      *
-     * @param filename the path to the file
+     * @param filename file path
      * @return a List with messages on the file
      * @throws IOException
      */
