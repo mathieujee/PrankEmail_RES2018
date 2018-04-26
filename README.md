@@ -82,11 +82,11 @@ You have now access to your mock mailbox. Just use this short url with the ip of
 `http://ip-of-docker-container:8080`
 
 
-#### Configuration
+### Configuration
 
 The configuration files are in the ressources directory
 
-`config.properties ` contains some configurations for the server and the project
+`config.properties ` contains some configurations for the server and the project :
 
 * Server address
 * Server Port
@@ -95,10 +95,10 @@ The configuration files are in the ressources directory
 
 `victims.utf8` contains a list of email address for the prank.
 
-`prankmails.utf8` contains some messages that will be send for the prank. To separat them, there is this symbol : `====`. 
+`prankmails.utf8` contains some messages that will be send for the prank. To separat them, there are these symbol : `====`. 
  
  
-#### Implementation
+### Implementation
 
 There are three main parts for the project :
 
